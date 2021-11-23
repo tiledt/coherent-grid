@@ -58,7 +58,7 @@ Use `launch-train-mit5k.sh` and `launch-train-facades.sh` for training the defau
 
 ## Testing 
 
-Use `launch-test-mit5k.sh` and `launch-test-facades.sh` for training the default models.
+Use `launch-test-mit5k.sh` and `launch-test-facades.sh` for testing the default models.
 
 
 ## Testing pre-trained models
