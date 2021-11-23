@@ -1,0 +1,17 @@
+python test.py --name facades-default \
+    --dataset_mode facades \
+    --nThreads 8 \
+    --tileSize 256 \
+    --gpu_ids 0 \
+    --load_size 512 \
+    --crop_size 512 \
+    --phase test \
+    --image_format .png \
+    --netG ConditionedUnet \
+    --base_channels 32 \
+    --global_base_channels 16  \
+    --condition_hidden_channels 64 \
+    --norm_groups -1 \
+    --decoder_factor 2 \
+    --slope .2 \
+    --condition preprocess

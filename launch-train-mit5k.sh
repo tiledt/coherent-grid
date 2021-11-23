@@ -1,0 +1,27 @@
+# MIT 5K training
+python train_val.py \
+    --gpu_ids 0 \
+    --name mit5k-default \
+    --dataset_mode mit5k \
+    --batchSize 16 \
+    --netG ConditionedUnet \
+    --tiles 16 \
+    --base_channels 32 \
+    --global_base_channels 16 \
+    --condition_hidden_channels 128 \
+    --condition preprocess \
+    --beta1 0.9 \
+    --beta2 0.999 \
+    --load_size 512 \
+    --crop_size 256 \
+    --norm_groups 16 \
+    --crop_ratio .8 \
+    --nThreads 8 \
+    --niter 50 \
+    --niter_decay 0 \
+    --tb_log \
+    --save_epoch_freq 10 \
+    --norm_G spectralgroup \
+    --norm_D spectralgroup \
+    --not_deterministic \
+    --compute_PSNR

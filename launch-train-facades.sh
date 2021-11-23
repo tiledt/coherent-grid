@@ -1,0 +1,24 @@
+python train_val.py \
+    --name facades-default \
+    --dataset_mode facades \
+    --batchSize 7 \
+    --netG ConditionedUnet \
+    --tiles 16 \
+    --base_channels 32 \
+    --global_base_channels 16  \
+    --condition_hidden_channels 64 \
+    --norm_groups -1 \
+    --decoder_factor 2 \
+    --slope .2 \
+    --condition preprocess \
+    --load_size 768 \
+    --crop_size 512 \
+    --crop_ratio .5 \
+    --nThreads 8 \
+    --niter 1000 \
+    --niter_decay 0 \
+    --tb_log \
+    --save_epoch_freq 50 \
+    --gpu_ids 0 \
+    --not_deterministic \
+    --compute_PSNR
