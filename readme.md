@@ -1,4 +1,4 @@
-# Coherent Grid Image Processing with Adaptive Normalization Layers
+# CoGrIP: A Framework for Coherent Grid Image Processing
 
 ## Setup
 
